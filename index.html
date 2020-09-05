@@ -238,7 +238,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/09/04/kafka/kafka_menu/" class="post-title-link" itemprop="url">kafka</a>
+            <a href="/2020/09/04/kafka/kafka_menu/" class="post-title-link" itemprop="url">kafka总结</a>
         </h2>
 
         <div class="post-meta">
@@ -255,7 +255,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-05 11:43:11" itemprop="dateModified" datetime="2020-09-05T11:43:11+08:00">2020-09-05</time>
+                <time title="修改时间：2020-09-05 11:59:53" itemprop="dateModified" datetime="2020-09-05T11:59:53+08:00">2020-09-05</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -282,8 +282,85 @@
 <blockquote>
 <p>1、先抛个开放性问题，kafka为什么辣么快<br>2、kafka如何读写数据，里面的机制什么怎么样的。<br>3、kafka的高可用是如何实现的<br>4、kafka的日志保留策略、日志压缩如何做的<br>5、kafka的幂等如何实现<br>6、kafka为什么不用读写分离来提高效率<br>7、kafka的选举策略</p>
 </blockquote>
-<p><a href="../kafka_why_so_fast">kafka为什么辣么快</a><br><a href="../kafka_why_so_fast">kafka读写机制</a></p>
+<p><a href="../kafka_why_so_fast">kafka为什么辣么快</a><br><a href="../kafka_reader_writer">kafka读写机制</a></p>
 
+      
+    </div>
+
+    
+    
+    
+
+    <div>
+      
+    </div>
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://tankmarshal.github.io/tankmarshal/2020/09/04/kafka/kafka_reader_writer/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="tankmarshal">
+      <meta itemprop="description" content="coding 不开车，开车不coding">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="lao4j‘s blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/09/04/kafka/kafka_reader_writer/" class="post-title-link" itemprop="url">kafka的读写机制</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-09-04 17:34:33" itemprop="dateCreated datePublished" datetime="2020-09-04T17:34:33+08:00">2020-09-04</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-09-05 11:50:26" itemprop="dateModified" datetime="2020-09-05T11:50:26+08:00">2020-09-05</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/kafka/" itemprop="url" rel="index"><span itemprop="name">kafka</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          
       
     </div>
 
@@ -320,7 +397,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2020/09/04/kafka/kafka_why_so_fast/" class="post-title-link" itemprop="url">kafka</a>
+            <a href="/2020/09/04/kafka/kafka_why_so_fast/" class="post-title-link" itemprop="url">kafka为什么快</a>
         </h2>
 
         <div class="post-meta">
@@ -337,7 +414,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-05 11:45:38" itemprop="dateModified" datetime="2020-09-05T11:45:38+08:00">2020-09-05</time>
+                <time title="修改时间：2020-09-05 11:50:39" itemprop="dateModified" datetime="2020-09-05T11:50:39+08:00">2020-09-05</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -386,83 +463,6 @@
 <p>1、kafka是基于 java scala开发<br>2、某些场景下，磁盘的顺序写，比如内存随机读写RAM（Random Access Memory）可能更快，<br>参考：<a target="_blank" rel="noopener" href="https://www.geeksforgeeks.org/why-apache-kafka-is-so-fast/">https://www.geeksforgeeks.org/why-apache-kafka-is-so-fast/</a></p>
 </blockquote>
 
-      
-    </div>
-
-    
-    
-    
-
-    <div>
-      
-    </div>
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://tankmarshal.github.io/tankmarshal/2020/09/04/kafka/kafka_reader_writer/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="tankmarshal">
-      <meta itemprop="description" content="coding 不开车，开车不coding">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="lao4j‘s blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/09/04/kafka/kafka_reader_writer/" class="post-title-link" itemprop="url">kafka</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-09-04 17:34:33" itemprop="dateCreated datePublished" datetime="2020-09-04T17:34:33+08:00">2020-09-04</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-05 11:43:52" itemprop="dateModified" datetime="2020-09-05T11:43:52+08:00">2020-09-05</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/kafka/" itemprop="url" rel="index"><span itemprop="name">kafka</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
       
     </div>
 
